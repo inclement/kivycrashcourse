@@ -1,0 +1,57 @@
+So, here is my very simple kivy tutorial.
+
+Just in case anyone doesn't know, kivy is a graphical framework for
+python. You use it to make user interfaces, and it comes with a nice
+set of highly extensible widgets to easily get very complex behaviour.
+
+One of the really big advantages of kivy is that it's highly cross
+platform. That doesn't just mean you can run your kivy app on windows,
+linux, osx (though you can), but also android and ios, and more
+unusual devices like the raspberry pi.
+
+I'm not going to introduce kivy itself
+much, you'll need to have already installed it to follow along, but I
+won't assume any existing knowledge of how it works. You'll need to
+know a little python to understand some of the details.
+
+If we want to make a kivy app, our entry point is going to be an app
+class. That means from kivy we import app, and we subclass this to
+make the root of our application. As far as we're concerned, the app
+handles initialising the window and interfacing with the system, and
+everything else we do will be using kivy graphical widgets.
+
+For our first try, we'll just make a totally trivial app, it doesn't
+do anything at all. We can get our script to run it using the standard
+python name==main syntax, then run our script.
+
+This gives us nothing, a blank screen. But that's great! Kivy's done
+everything for us, now we just need to give it something to actually
+display.
+
+In practice, this means creating some root widget for our
+application. This should be returned by app's build() method, and
+it'll take up the whole screen. If we like we can then build a full application
+by adding more widgets to it; some widgets control the position or
+size of their children, and we can build a full interface this way.
+
+But we need a widget to return, lets use a simple button. We import it
+from kivy's uix module, then we simply return it from the build. Set
+some properties - these are all kivy properties with some magic
+behaviour that lets you bind them to one another, but that isn't
+important right now.
+
+There, that's it, and as a simple introduction to kivy the video stops here.
+
+Rather than stop here, I'm going to give a quick further example of
+how powerful kivy's widgets can be. We'll replace the hello button
+with text that we can drag around, rotate and resize just by using a
+slightly different kivy widget - the Scatter. This handles all the
+detection and response to touch or mouse interaction for us, so all we
+have to do is tell it what widget to display.
+
+So...lets do that.
+
+Add scatter, floatlayout, label
+
+Explain will stop here, simple kivy app, little taster of how easy it
+is to make a powerful multitouch interface, rotation, scaling etc.

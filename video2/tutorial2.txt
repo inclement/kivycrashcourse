@@ -1,0 +1,68 @@
+Hello, and welcome to the second video in this little series on kivy.
+
+In the first video, I went from nothing to having a simple kivy app
+with text that can be dragged to move, resize and rotate it. That's
+what's displayed on the screen here, if you want to follow on you can
+copy it down now, or I'll put a link to a downloadable version in the
+video description.
+
+In this video, I'm going to compile it straight to android, but I'm
+not going to change the app at all - that's one of the great things
+about kivy, an app like this will just run on android without any
+changes or special modifications at all. Of course you can use lots of
+android api stuff if you want, I'll cover that in a future video.
+
+I actually ended up with a few different things I wanted to say about
+the android build process, which are a bit of an info-dump for a few
+minutes. Feel to skip ahead to where I actually
+start typing, I'll put a link to that in the video when I upload. If
+you have any problems or queries you can still listen in case I
+address them.
+
+At this point I should say, you might hit some problems. You *shouldn't*, and
+don't worry about the possibility unless it happens, but compiling for
+android involves a lot of behind the scenes stuff that can
+occasionally fail, perhaps for an unclear reason to do with your
+specific machine or similar. If you happen to hit some problem like
+this, don't panic, feel free to ask about it on the kivy mailing list,
+or irc channel - I'll link to both in the description. Kivy has a
+great community that's very good at helping fix these kinds of problem.
+
+Now, for the build process there are effectively two ways to build your app
+for android. Both use the python-for-android project, also created by
+the kivy devs, and the first is to directly use this to compile an
+android distribution, then call the right functions to create an
+apk. This is fine, but you need to install the android sdk and ndk
+separately and link them using environment variables. You can see xxx
+for details about that.
+
+I'm instead going to go through the second method, using the buildozer
+tool. This uses python-for-android, but abstracts away much of the
+process, so we only need to edit a configuration file - buildozer
+itself will download the android sdk and ndk, as well as
+python-for-android, and handle all the compilation.
+
+You do need to use linux or osx for this, unfortunately buildozer
+currently won't work on windows. If you only have windows, you can use
+a virtual machine - just a plain install of ubuntu or lubuntu will be
+fine. Kivy itself provides a vm image with python-for-android
+preinstalled, but you don't need to use this - by all means look into
+it, but as we're using buildozer we don't need these preinstalled things.
+
+So lets get going! First, the only thing you need to install is
+buildozer. You can do that with pip install buildozer, but it's often
+useful to clone the most up to date version with git clone.
+
+After that, we go to our app directory. Now, our main file has to be
+called main.py - this is the file that our android app will run. Last
+time I called our simple app tutorial.py, so I'll just save it as
+main.py, problem solved. You should do the same.
+
+Now we open a terminal and run `buildozer init`. This creates a basic
+buildozer configuration file with some default values, but we'll need
+to customise it.
+
+...go through buildozer customisations
+
+Run adb devices
+Run buildozer android debug deploy

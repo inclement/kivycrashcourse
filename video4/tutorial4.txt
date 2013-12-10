@@ -1,0 +1,24 @@
+
+
+Right, welcome to part 4 of my kivy crash course.
+
+I have here our app from last time, exactly where I left off. We have
+this textinput, which we gave a fixed height, and we can type in it to
+change the text in our scatter label.
+
+Going back to the code, it's starting to get a little complex. We've
+manually instantiated several widgets, and we created this binding to
+have the text of the textinput automatically and immediately change
+the text of the label.
+
+Now, this is all very well, and we can build a full app essentially
+this way. However, it seems like a lot of boilerplate - all this
+widget creation and assignment, and it can quickly get confusing and
+annoying as soon as we want to add more bindings of different kinds.
+
+For this reason, kivy has its own domain specific language, called
+kivy language. Using this you can define widget trees in a much more
+natural way, and that's what I'm going to show you today. It'll also
+make it much easier to create these inter-widget bindings, but rather
+than explain the details now I'll show you exactly how in a moment.
+

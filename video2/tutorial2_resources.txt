@@ -1,0 +1,19 @@
+
+
+
+Kivy contact and support:
+    http://kivy.org/docs/contact.html
+    #Kivy on irc.freenode.net
+
+Kivy android build doc:
+    http://kivy.org/docs/guide/packaging-android.html
+
+Python-for-android:
+    https://github.com/kivy/python-for-android
+    http://python-for-android.readthedocs.org/en/latest/
+    http://kivy.org/docs/guide/packaging-android.html
+
+Buildozer:
+    $ sudo pip install buildozer
+    https://github.com/kivy/buildozer
+

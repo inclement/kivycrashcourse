@@ -1,0 +1,32 @@
+
+Hello again. This is the third video in my series that I ended up
+calling kivy crash course.
+
+In this video, I'm going to add some more functionality to the simple
+kivy app I made in part 1, and displayed again here. If you remember,
+we have this text 'Hello!' displayed with a kivy label widget, which
+in turn we can move around because it's placed in a kivy scatter
+widget that knows how to interpret all this kind of behaviour.
+
+Going back to the python, this is exactly the code I wrote in part
+1. You can copy it down now if you want to follow along, or I'll put a
+link to a downloadable version in the video description.
+
+Now, how are we going to change the app?
+Specifically,
+instead of just saying 'hello!' I want to let the user input some text
+to display. This'll demonstrate a few more kivy widgets including one
+for text input, as well as how to bind behaviour between widgets.
+
+...start with demo
+
+
+...write textinput part
+
+
+...show again
+
+...set orientation, binding
+
+...show final
+
