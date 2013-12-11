@@ -6,3 +6,13 @@ This repository contains material relating to my Kivy Crash Course youtube serie
 Most video directories contain a few main files. The python is in `before.py` and `after.py`, containing the code at the start and end of the video respectively. You can download and run `before.py` to follow along with the tutorial, or download and run `after.py` to try the code after I've made the tutorial changes.Kv language definitions are in `tutorial.py` (I'll work out a more scalable naming scheme when more videos actually use kv language at all).
 
 Some videos have an associated `notes.txt`, containing any notes I wrote to go with the video. 
+
+Videos
+======
+
+You can find a youtube video with all the Kivy Crash Course videos at :url:`https://www.youtube.com/playlist?list=SPdNh1e1kmiPP4YApJm8ENK2yMlwF1_edq`, or the individual videos are at:
+
+- Video 1: Making a simple app - https://www.youtube.com/watch?v=F7UKmK9eQLY
+- Video 2: Building an android apk - https://www.youtube.com/watch?v=t8N_8WkALdE
+- Video 3: More interesting widget interactions - https://www.youtube.com/watch?v=-NvpKDReKyg
+- Video 4: Kivy language - https://www.youtube.com/watch?v=ZVWAKzR63ig
