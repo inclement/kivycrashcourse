@@ -10,7 +10,7 @@ Some videos have an associated `notes.txt`, containing any notes I wrote to go w
 Videos
 ======
 
-You can find a youtube video with all the Kivy Crash Course videos at :url:`https://www.youtube.com/playlist?list=SPdNh1e1kmiPP4YApJm8ENK2yMlwF1_edq`, or the individual videos are at:
+You can find a youtube video with all the Kivy Crash Course videos at https://www.youtube.com/playlist?list=SPdNh1e1kmiPP4YApJm8ENK2yMlwF1_edq, or the individual videos are at:
 
 - Video 1: Making a simple app - https://www.youtube.com/watch?v=F7UKmK9eQLY
 - Video 2: Building an android apk - https://www.youtube.com/watch?v=t8N_8WkALdE
