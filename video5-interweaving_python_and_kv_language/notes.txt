@@ -1,0 +1,77 @@
+
+
+Hello and welcome to the next kivy crash course video.
+
+
+I'm still using the same program I've been building throughout the
+course, and as usual I'll put a link to a downloadable version in the
+video description for if you want to follow along. 
+
+The program is still fairly simple, but last time we converted the
+entire thing to kivy language, a special domain specific language for
+making rules to construct kivy widget trees. Rather than instantiating
+individual widgets, we write down these layers of nested widgets with
+all the different properties we want them to have. Vitally, kivy
+language *automatically* detects references to other properties and
+creates auto-update bindings, so in our program the label's text will
+immediately and automatically be updated when the textinputs text changes.
+
+I'm going to base *this* video on a simple question; how do interweave
+kivy language and python? That is, clearly this way of defining things
+is neat and very flexible, but what happens as soon as we want to add
+something more complex that we can't write down in just one line of
+python? In pure python we're used to moving all this kind of thing
+into function methods or whatever to compartmentalise it, which is
+still a good idea, but how is that going to work in kv language?
+
+I'm going to use just a very simple example; how can I change the
+colour of my label text whenever I press a key? That's actually a
+pretty simple task that we could do entirely in kivy language (we'll
+see how shortly), but I'll show you a few different ways and the basic
+ideas will translate to any much more involved operation you want to
+do. 
+
+So, enough talk, lets go! The first thing is, what we want is a little
+different to what we already have. Currently we've automatically bound
+the label text to depend on the textinput's text, but how do we
+instead call some other arbitrary function when the textinput text
+changes? The answer is that because the text is a kivy property, we
+can automatically make use of the automatically called on_text
+function...
+(works for any kivy property)
+(note that can create normal method with this name)
+
+-> at this point, could just set the label color to what we want, but
+that's cheating
+-> define method
+-> reference label by id
+
+SHOW EXAMPLE
+
+Okay, so this is the first big important step. We started in kivy
+language, told the textinput to automatically call this method when
+its text changes, and then called back to our kivy language widget
+tree by referencing the id we gave to our label. This is a very
+powerful, general purpose way to interweave the simple kivy structure
+with more complex python methods where necessary.
+
+But this isn't the end of the story. This mechanism is fine, but it's
+not the only conceivable interaction we might want. For instance, what
+if we also want to change the textinput colour to match? We could
+easily extend our method by just writing an extra line to do that, but
+this isn't a very extensible technique in general - what if our user
+interface had tens or hundreds of dynamic buttons?
+
+It would be much neater in this kind of case to create a single python
+attribute and point all the button colours at it. That is, instead of
+setting the label colour, we could write 'self.random_colour = ...'...
+
+-> show how this won't work
+-> change to listproperty, explain how this is like all the other
+properties, and how we could write it in kv language now
+
+In the next video, I'll take a proper look at kivy properties,
+recapping what I've covered briefly in all the videos so far and
+trying to describe more rigorously what different kinds there are and
+how to use them. In the meantime, as always I encourage you to
+experiment with the code we've written so far...
