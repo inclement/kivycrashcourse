@@ -9,7 +9,7 @@ from kivy.uix.boxlayout import BoxLayout
 
 class ScatterTextWidget(BoxLayout):
     pass
-
+    
 class TutorialApp(App):
     def build(self):
         return ScatterTextWidget()

@@ -20,8 +20,8 @@ I'm going to base *this* video on a simple question; how do interweave
 kivy language and python? That is, clearly this way of defining things
 is neat and very flexible, but what happens as soon as we want to add
 something more complex that we can't write down in just one line of
-python? In pure python we're used to moving all this kind of thing
-into function methods or whatever to compartmentalise it, which is
+the kivy file? In pure python we're used to moving all this kind of thing
+into class methods or whatever to compartmentalise it, which is
 still a good idea, but how is that going to work in kv language?
 
 I'm going to use just a very simple example; how can I change the
@@ -54,6 +54,9 @@ its text changes, and then called back to our kivy language widget
 tree by referencing the id we gave to our label. This is a very
 powerful, general purpose way to interweave the simple kivy structure
 with more complex python methods where necessary.
+
+END HERE
+Use listproperty next time
 
 But this isn't the end of the story. This mechanism is fine, but it's
 not the only conceivable interaction we might want. For instance, what
