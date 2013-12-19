@@ -1,0 +1,14 @@
+<ScatterTextWidget>:
+    orientation: 'vertical'
+    TextInput:
+        id: my_textinput
+        font_size: 150
+        size_hint_y: None
+        height: 200
+        text: 'default'
+    FloatLayout:
+        Scatter:
+            Label:
+                id: my_label
+                text: my_textinput.text
+                font_size: 150

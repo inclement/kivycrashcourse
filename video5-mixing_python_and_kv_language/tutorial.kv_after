@@ -1,0 +1,17 @@
+#:import random random
+
+<ScatterTextWidget>:
+    orientation: 'vertical'
+    TextInput:
+        id: my_textinput
+        font_size: 150
+        size_hint_y: None
+        height: 200
+        text: 'default'
+        on_text: my_label.color = [random.random() for i in xrange(3)] + [1]
+    FloatLayout:
+        Scatter:
+            Label:
+                id: my_label
+                text: my_textinput.text
+                font_size: 150
