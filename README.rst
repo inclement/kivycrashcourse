@@ -16,3 +16,4 @@ You can find a youtube video with all the Kivy Crash Course videos at https://ww
 - Video 2: Building an android apk - https://www.youtube.com/watch?v=t8N_8WkALdE
 - Video 3: More interesting widget interactions - https://www.youtube.com/watch?v=-NvpKDReKyg
 - Video 4: Kivy language - https://www.youtube.com/watch?v=ZVWAKzR63ig
+- Video 5: Mixing python and kivy language - https://www.youtube.com/watch?v=ZmteLworB4E
