@@ -26,7 +26,8 @@ The following are my direct plans for the next few videos and general ideas for 
 Next videos:
 
 - Video 6: Mixing python and kv via kivy properties
-- Video 7 (interlude): The Label widget (via scrollable label)
+- Video 7: Drawing on the kivy canvas
+- Video 6.5 or 7.5 (interlude): The Label widget (via scrollable label)
 
 Future topics:
 
