@@ -17,3 +17,20 @@ You can find a youtube video with all the Kivy Crash Course videos at https://ww
 - Video 3: More interesting widget interactions - https://www.youtube.com/watch?v=-NvpKDReKyg
 - Video 4: Kivy language - https://www.youtube.com/watch?v=ZVWAKzR63ig
 - Video 5: Mixing python and kivy language - https://www.youtube.com/watch?v=ZmteLworB4E
+  
+Plans
+=====
+
+The following are my direct plans for the next few videos and general ideas for future topics. Feel free to suggest more!
+
+Next videos:
+
+- Video 6: Mixing python and kv via kivy properties
+- Video 7 (interlude): The Label widget (via scrollable label)
+
+Future topics:
+
+- Layouts (examples of different ones) 
+- Using android apis via p4a 
+- Creating a kivy settings panel 
+- Creating a standalone package via pyinstaller
