@@ -5,7 +5,7 @@ This repository contains material relating to my Kivy Crash Course youtube serie
 
 Most video directories contain a few main files. The python is in `before.py` and `after.py`, containing the code at the start and end of the video respectively. You can download and run `before.py` to follow along with the tutorial, or download and run `after.py` to try the code after I've made the tutorial changes. Kv language definitions are in `tutorial.kv`, and if this changes through the video then the initial and final kv files will be `tutorial.kv_before` and `tutorial.kv_after` respectively. If using these, you'll need to rename them appropriately.
 
-Some videos have an associated `notes.txt`, containing any notes I wrote to go with the video. 
+Some videos have an associated `notes.txt`, containing any notes I wrote to go with them or to help keep track of what I wanted to say.
 
 Videos
 ======
@@ -31,7 +31,8 @@ Next videos:
 
 Future topics:
 
-- Layouts (examples of different ones) 
+- Animations
+- Layouts (examples of different ones) (maybe an interlude?)
 - Using android apis via p4a 
 - Creating a kivy settings panel 
 - Creating a standalone package via pyinstaller
