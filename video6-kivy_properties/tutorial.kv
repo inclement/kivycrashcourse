@@ -14,4 +14,24 @@
                 id: my_label
                 text: my_textinput.text
                 font_size: 150
+                color: root.text_colour
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: None
+        height: 150
+        Label:
+            id: label1
+            text: my_textinput.text[:3][::-1]
+            font_size: 100
+            color: root.text_colour
+        Label:
+            id: label2
+            text: my_textinput.text[-3:][::-1]
+            font_size: 100
+            color: root.text_colour
+        TextInput:
+            id: ti
+            text: '0.2'
+            on_text: root.text_colour[1] = float(self.text)
+            
     

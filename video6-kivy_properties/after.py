@@ -7,12 +7,12 @@ from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.textinput import TextInput
 from kivy.uix.boxlayout import BoxLayout
 
-from kivy.properties import ListProperty
+from kivy.properties import ListProperty, ObjectProperty
 
 import random
 
 class ScatterTextWidget(BoxLayout):
-    text_colour = ListProperty([1, 0, 0, 1])
+    text_colour = ObjectProperty([1, 0, 0, 1])
     
     def change_label_colour(self, *args):
         colour = [random.random() for i in xrange(3)] + [1]
