@@ -1,0 +1,72 @@
+
+Hi, this is video 6 of my kivy crash course.
+
+Last time we added to our program some simple interaction between
+python and the kivy language. Specifically, we made it so that
+changing the textinput text not only updates this movable label, but
+also changes its colour.
+
+Going back to the code, we accomplished this with a very general
+useful technique where we label widgets in the kv language with ids,
+then in the python side we could do whatever we like in normal python
+code before accessing the widget via this id and (in this case)
+setting its color property to a new random colour we just created. The
+final component was using this on_text event to automatically call
+back the python and run our random colour method whenever the text is
+changed. As I mentioned, every property - size_hint, color, whatever -
+automatically has such an on_propertyname event, but more on that in a
+moment.
+
+
+In this video I'm  going to start off by showing  how this might start
+to become if not a problem,  at least a little unwieldy. For instance,
+I can use kv language to trivially add a couple of labels...
+
+...add labels
+...set text binding
+
+But now, how do I update their colours just like the main moving
+label? One answer is obvious, we can just do it the same way as last
+time. We give them ids, and on the python side for each label we can
+set its colour individually. That still works fine.
+
+
+Hoooowever, it's really not ideal to have to keep track of all these
+labels - especially if we made more, or other widgets of different
+types, or even wanted to interact with completely different widget
+trees that we don't have such simple references to.
+
+In fact, we've already seen the hints of a better way for these kinds
+of situation in the way we created these text bindings. Each of our
+labels has a text that tracks the textinput somehow, but the textinput
+doesn't know or care about the labels, it only sets its text property
+and the labels are able to detect the change and use it to update
+their own text, which is done by an automatic binding created by kivy
+language. What I'm really getting at here is that we'd like to do just
+the same thing with the random colour, getting rid of all this id
+bookkeeping and simply setting the ScatterTextWidget's
+text_colour. Then in kv language we want to just set all the label
+colours to root.text_colour and be done with it - if kv language could
+automatically detect the reference and create a binding like it did
+for the text, that would be fantastic.
+
+Unfortunately, right now this will do...nothing. I'll even prove it
+
+...run app
+
+...explain that difference is because text is a kivy property
+
+...show how to define own text_colour property
+
+...demonstrate works
+
+...mention on_property_name
+
+
+...explain is just simple introduction, mention other types of property
+
+Next video will be about kivy graphics instructions, one of the last
+big things about kivy that I haven't yet covered. This lets us
+directly draw shapes - ellipses, rectangles, lines or arbitrary
+shapes, including setting the colours, defining transformations. Also
+ties into animation.
