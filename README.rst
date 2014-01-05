@@ -36,4 +36,5 @@ Future topics:
 - Using android apis via p4a 
 - Creating a kivy settings panel 
 - Creating a standalone package via pyinstaller
+- Installation procedure on windows/osx
   
