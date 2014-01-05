@@ -1,0 +1,80 @@
+
+
+Right, time for another kivy crash course video, this time covering a
+big feature of kivy that I've been eager to cover for ages; drawing
+stuff!
+
+The basic idea here is that kivy has a range of graphics commands for
+drawing stuff like shapes (rectangles, triangles, lines, meshes etc.)
+including performing contextual modifications like translation,
+rotation and scaling, and even providing the ability to do stuff like
+mapping arbitrary images or textures to the shapes. Altogether these
+operations are very powerful - in fact all of kivy's widget behaviour
+ultimately comes down to manipulation with these instructions.
+
+What it means for you is that you can draw whatever you like, from
+useful debugging stuff like drawing colourful widget backgrounds to be
+clear on their sizes, to drawing the entire api of your app directly
+with these instructions. Im going to cover the basics of how to go about
+doing so.
+
+(Can download code)
+
+The way it works is simply that every single kivy widget has a canvas
+that you can draw on. For instance, I'm going to do some drawing
+straight onto our ScatterTextWidget's canvas just for an example.
+
+Now, we could do drawing in any part of the code, but I'm going to put
+it in our __init__ function so that the drawing occurs when the widget
+is initalised. The syntax is like this...we write 'with self.canvas'
+to initialise the canvas context, so now all drawing instructions we
+use are automatically added to the canvas.
+
+.. draw some stuff
+.. note could also do self.canvas.add
+.. mention canvas.before and canvas.after
+
+.. show results
+
+
+The problem with this is that we've drawn everything in terms of
+pixels. That means I can resize the window, or if it wasn't the root
+widget I could even move the scattertextwidget around, and none of
+this would change - it's totally static. Of course that's sometimes
+fine, but most of the time it's probably not how you want to draw
+things - you might want to draw a background for a widget, for
+instance, that keeps the same size as the widget and moves around
+along with it.
+
+We *could* accomplish this using aspects of kivy's event system that
+we've already seen. For instance, we could store references to all
+these graphics (self.rec etc. etc.) then use the automatically called
+property methods like on_size and on_pos to update them all. That's
+sometimes the best way for stuff like dynamically created graphics,
+but just as I've said in previous videos, it's a lot of boilerplate.
+
+Luckily, just like we can control widgets in the kv language, we can
+draw graphics here as well. The syntax now is that every widget has
+this special canvas instruction - it looks a bit like our widget
+declarations, but it's important to note that the canvas is *not* a
+widget, and nor are the graphics instructions. You can only draw them
+on this canvas, and we can't use any widgets in this part of the code.
+
+What we *can* do is now refer to kivy properties, just like we've done
+before, and just as in those cases the kivy language can automatically
+detect the reference and make an automatic update binding. So for
+instance, a simple example is drawing an ellipse that's exactly the
+size and shape of the label widget. By referring directly to its size
+and pos, the graphics instruction will be automatically updated when
+the label is moved or resized.
+
+.. show result
+.. mention problem with label
+
+Haven't decided about my next video, but I think I will step away from
+this little toy program we've been developing to maybe spend a couple
+of videos addressing some real world problems in kivy, like when you
+want to make a widget with some particular behaviour and aren't sure
+how to construct it from kivy widgets. I'm doing this because over the
+last 7 videos we really have briefly covered just about all the
+important pieces of kivy.
