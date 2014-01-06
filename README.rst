@@ -26,15 +26,16 @@ The following are my direct plans for the next few videos and general ideas for 
 
 Next videos:
 
-- Video 7: Drawing on the kivy canvas
-- Video 6.5 or 7.5 (interlude): The Label widget (via scrollable label)
+- Video 8: Lets fix some bugs
+- Case study 1: The Label widget (via scrollable label)
 
 Future topics:
 
 - Animations
-- Layouts (examples of different ones) (maybe an interlude?)
+- Layouts (examples of different ones) (maybe a case study?)
 - Using android apis via p4a 
 - Creating a kivy settings panel 
 - Creating a standalone package via pyinstaller
 - Installation procedure on windows/osx
+- Case study: sparse grid layout
   

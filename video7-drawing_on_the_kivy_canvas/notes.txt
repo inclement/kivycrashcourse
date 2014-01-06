@@ -14,7 +14,7 @@ ultimately comes down to manipulation with these instructions.
 
 What it means for you is that you can draw whatever you like, from
 useful debugging stuff like drawing colourful widget backgrounds to be
-clear on their sizes, to drawing the entire api of your app directly
+clear on their sizes, to drawing the entire user interface of your app directly
 with these instructions. Im going to cover the basics of how to go about
 doing so.
 
