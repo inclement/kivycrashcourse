@@ -10,7 +10,7 @@ Some videos have an associated `notes.txt`, containing any notes I wrote to go w
 Videos
 ======
 
-You can find a youtube video with all the Kivy Crash Course videos at https://www.youtube.com/playlist?list=SPdNh1e1kmiPP4YApJm8ENK2yMlwF1_edq, or the individual videos are at:
+You can find a youtube playlist with all the Kivy Crash Course videos at https://www.youtube.com/playlist?list=SPdNh1e1kmiPP4YApJm8ENK2yMlwF1_edq, or the individual videos are at:
 
 - Video 1: Making a simple app - https://www.youtube.com/watch?v=F7UKmK9eQLY
 - Video 2: Building an android apk - https://www.youtube.com/watch?v=t8N_8WkALdE
@@ -18,7 +18,8 @@ You can find a youtube video with all the Kivy Crash Course videos at https://ww
 - Video 4: Kivy language - https://www.youtube.com/watch?v=ZVWAKzR63ig
 - Video 5: Mixing python and kivy language - https://www.youtube.com/watch?v=ZmteLworB4E
 - Video 6: Kivy properties - https://www.youtube.com/watch?v=OkW-1uzP5Og
-  
+- Video 7: Drawing on the canvas - https://www.youtube.com/watch?v=1d709erhpdQ
+
 Plans
 =====
 
