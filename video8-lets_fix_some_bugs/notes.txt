@@ -1,0 +1,95 @@
+
+Hi again, this is my eighth kivy crash course video.
+
+At this point, as I mentioned last time, I think I really have 
+covered all the kivy basics! Only fairly quickly in each video, and of
+course there's plenty more I can talk about, but we
+really have moved through the basics of kivy widget trees, the kivy
+language, the event and property system and graphical instructions on
+kivy's canvas.
+
+Of course I'm not going to stop here, there's plenty more to cover and
+I'll also try to move on to different programs addressing real world
+problems you might have rather than just developing this toy
+program. I have plenty of ideas, but please feel free to leave a
+comment if you have any suggestions or things you'd like to see.
+
+First of all, though, I want to wrap up this program for now by fixing
+some bugs. Nothing major, but actually there are a couple of places
+where the program doesn't quite work how I really want it to, which
+you might have noticed if you've been following along. As usual, this
+is the same program and code from last time, and there'll be a
+downloadable version in the video description if you want to follow along.
+
+
+
+The first problem is the initial position of our scattered label. We
+can drag it around fine, but when the program is run it starts off in
+the bottom left corner, and the text actually overflows the screen a
+bit. I'd prefer it to start somewhere in the middle of the screen, but
+I also want to fully understand why the text overflows even though the
+label widget itself should be in the default start position of the
+exact bottom left of the screen.
+
+I usually find a useful way to understand widget position is to make
+some simple use of graphics instructions. Going back to the code, as I
+covered last time we can draw a simple rectangle on the label's canvas
+
+.. draw rectangle
+.. show text overflows label
+.. bind label size to label texture size (will cover more fully in
+future video)
+
+
+The second bug is that actually we don't have to click exactly on the
+label to move it - in fact, we can click anywhere above or to the
+right of it! I forgot about this one and actually only noticed after a
+few videos, and I've been meaning to point it out since then!
+
+
+Again, the first thing I usually would do when something like this
+happens is draw a background colour to understand exactly where the
+scatter is. My suspicion would be that the problem is to do with how
+the scatter interacts with the floatlayout.
+
+.. draw rectangle (explain canvas.after)
+.. show result
+
+Now this is pretty suspicious, it looks like the scatter is the same
+size as the floatlayout. Actually the reason for this is something
+we've seen before - every widget has a default size hint of 1,1, and
+in this case the FloatLayout is recognising this and saying 'oh, okay,
+I'll make you the same size as me'.
+
+That means the solution is also similar to before when we've set
+manual sizes in boxlayouts, we want to take the scatter and give it a
+manual size - making it the same size as the label would be a natural
+choice. Again just as before, we do this by
+
+.. set manual size
+.. show result
+
+Great, scatter in bottom left with label.
+
+.. note how we can see implementation detail, rotating label changes
+its image but not the scatter
+
+.. set center property
+.. show widget in center
+
+
+Okay, great, that's all these bugs solved so everythign looks a little
+bit neater - the label is now big enough to contain its contents, the
+scatter isn't really big, and the the scattered label starts in the
+centre of the screen.
+
+That's not a major change in the end, but I hope it's
+been useful just to walk through a few of these quirks and understand
+how you can use the same ideas and processes to fix unintended
+behaviour in your own apps.
+
+I haven't completely decided what I'll do next time, but one idea is
+to walk through the creation of a scrollable label widget, which would
+cover some more behaviour of the label widget as well as hopefully be
+useful to anyone wanting to create their own complex widgets out of
+kivy widget components.
