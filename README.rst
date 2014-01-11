@@ -39,4 +39,6 @@ Future topics:
 - Creating a standalone package via pyinstaller
 - Installation procedure on windows/osx
 - Case study: sparse grid layout
+- Using a screen manager
+- Using twisted?
   
