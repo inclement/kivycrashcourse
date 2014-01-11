@@ -33,12 +33,16 @@ Next videos:
 Future topics:
 
 - Animations
-- Layouts (examples of different ones) (maybe a case study?)
 - Using android apis via p4a 
 - Creating a kivy settings panel 
-- Creating a standalone package via pyinstaller
-- Installation procedure on windows/osx
 - Case study: sparse grid layout
+  
+(requests):
+
+- Layouts (examples of different ones) (maybe a case study?)
 - Using a screen manager
 - Using twisted?
+- An android/ios datetime vertical carousel
+- Creating a standalone package via pyinstaller
+- Installation procedure on windows/osx
   
