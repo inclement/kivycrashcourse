@@ -45,4 +45,5 @@ Future topics:
 - An android/ios datetime vertical carousel
 - Creating a standalone package via pyinstaller
 - Installation procedure on windows/osx
-  
+- Catering for different screen sizes for consistent ui/sizes on different devices  
+
