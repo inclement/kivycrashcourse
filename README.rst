@@ -19,6 +19,7 @@ You can find a youtube playlist with all the Kivy Crash Course videos at https:/
 - Video 5: Mixing python and kivy language - https://www.youtube.com/watch?v=ZmteLworB4E
 - Video 6: Kivy properties - https://www.youtube.com/watch?v=OkW-1uzP5Og
 - Video 7: Drawing on the canvas - https://www.youtube.com/watch?v=1d709erhpdQ
+- Video 8: Let's fix some bugs - https://www.youtube.com/watch?v=2Gc8iYJQ_qk
 
 Plans
 =====
@@ -27,7 +28,6 @@ The following are my direct plans for the next few videos and general ideas for 
 
 Next videos:
 
-- Video 8: Lets fix some bugs
 - Case study 1: The Label widget (via scrollable label)
 
 Future topics:
@@ -46,4 +46,5 @@ Future topics:
 - Creating a standalone package via pyinstaller
 - Installation procedure on windows/osx
 - Catering for different screen sizes for consistent ui/sizes on different devices  
+- Video about using maps (combine with android?)
 
