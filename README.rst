@@ -29,6 +29,8 @@ The following are my direct plans for the next few videos and general ideas for 
 Next videos:
 
 - Case study 1: The Label widget (via scrollable label)
+- Case study 2: A sparse gridlayout
+- Another case study...with event handling? 
 
 Future topics:
 
@@ -39,6 +41,7 @@ Future topics:
   
 (requests):
 
+- How to make/use your own events
 - Layouts (examples of different ones) (maybe a case study?)
 - Using a screen manager
 - Using twisted?
