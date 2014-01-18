@@ -20,7 +20,7 @@ You can find a youtube playlist with all the Kivy Crash Course videos at https:/
 - Video 6: Kivy properties - https://www.youtube.com/watch?v=OkW-1uzP5Og
 - Video 7: Drawing on the canvas - https://www.youtube.com/watch?v=1d709erhpdQ
 - Video 8: Let's fix some bugs - https://www.youtube.com/watch?v=2Gc8iYJQ_qk
-- Video 9: Creating a scrollable label - 
+- Video 9: Creating a scrollable label - https://www.youtube.com/watch?v=WdcUg_rX2fM
 
 Plans
 =====
