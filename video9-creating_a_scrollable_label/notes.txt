@@ -1,0 +1,36 @@
+
+Hello, this is kivy crash course video number 9.
+
+As I said last time, I'm going to move away from the toy kivy app we
+constructed so far to try and look at some other kivy methods and
+features in different circumstances. I thought a nice start to that
+would be to try and tackle a common sort of problem you might
+encounter when building your own kivy programs - how to think about
+building your own widgets to combine the behaviour of existing ones in
+useful ways.
+
+The example I'm going to use right now is the question of
+how to make a scrollable label, a widget that will display text but
+which can be scrolled by clicking and dragging. Kivy's default label
+doesn't have that functionality, it only displays text, but we'll
+combine it with a ScrollView widget that does have the scrolling behaviour.
+
+
+Before any of that though, lets quickly set up a basic program.
+
+.. import label, scrollview
+.. explain runTouchApp
+.. explain builder
+.. create ScrollableLabel
+
+.. make long text
+
+DEMONSTRATE
+
+.. Add text_size declaration
+
+DEMONSTRATE
+
+.. Add scrolling, pass text through
+
+DEMONSTRATE

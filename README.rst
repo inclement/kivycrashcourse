@@ -29,8 +29,8 @@ The following are my direct plans for the next few videos and general ideas for 
 Next videos:
 
 - Case study 1: The Label widget (via scrollable label)
-- Case study 2: A sparse gridlayout
-- Another case study...with event handling? 
+- Something about layouts
+- Case study 2: Making your own sparse gridlayout
 
 Future topics:
 
