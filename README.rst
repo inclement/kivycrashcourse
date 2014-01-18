@@ -20,6 +20,7 @@ You can find a youtube playlist with all the Kivy Crash Course videos at https:/
 - Video 6: Kivy properties - https://www.youtube.com/watch?v=OkW-1uzP5Og
 - Video 7: Drawing on the canvas - https://www.youtube.com/watch?v=1d709erhpdQ
 - Video 8: Let's fix some bugs - https://www.youtube.com/watch?v=2Gc8iYJQ_qk
+- Video 9: Creating a scrollable label - 
 
 Plans
 =====
@@ -28,9 +29,8 @@ The following are my direct plans for the next few videos and general ideas for 
 
 Next videos:
 
-- Case study 1: The Label widget (via scrollable label)
 - Something about layouts
-- Case study 2: Making your own sparse gridlayout
+- Case study 2: Making your own sparse gridlayout?
 
 Future topics:
 
