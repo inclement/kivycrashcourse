@@ -1,0 +1,58 @@
+
+Hello, this is kivy crash course number ten.
+
+
+In this video, I want to try to address something that sometimes seems
+to cause a relatively large amount of confusion for new users...that
+is, layout. The general ideas here aren't hard, but I often see
+questions about why widgets are positioned the way they are, how
+kivy's named Layout widgets should be used, what to do if kivy doesn't
+have the layout widget you want, and so on.
+
+To do that, I'm going to ask the question...what if Kivy just didn't
+have any Layout classes? How would we position widgets then, what
+problems would we face, and how would we solve them. Actually it turns
+out that we can handle things pretty well, as we'll see in the next
+few minutes, as kivy's basic tools and mechanisms give us all the
+power we need.
+
+So to start with, lets make an extremely basic program and just see
+what happens.
+
+.. make basic program (widget with Image)
+
+.. Show how Image can be added, but by default nothing is done to its
+position or size, it has the default settings
+
+.. explain how we could manually set these
+
+In fact, we could position everything in our application by manually
+setting its height. For instance, we could do things like carefully
+place two images next to one another and have them automatically
+resize to fill their parent widget.
+
+.. do positioning in kivy language
+
+So okay, this is already neat and powerful, we've accomplished a
+non-trivial widget positioning using the power of kv language, so that
+everything updates in response to any changes we make later.
+
+This works fine, but it's not perfect, and there are a few different
+ways you could start to hit the limitations of the method. For
+instance, what if you wanted to place two adjacent widgets in lots of
+different parts of your app? You could copy this code repeatedly, but
+that's a bad practice, and is just wasteful anyway. Or what if your
+widgets are somewhat dynamic and you want to add or remove them...then
+you can't write them in this static kivy language way, so you have to
+manually make all the python bindings for these relationships when you
+swap the widgets out.
+
+Okay, so that's not so great, but we're shrewd programmers so we can
+see a solution to that...lets just make a single class that keeps an
+eye on its children and creates those bindings when necessary. That
+way it can handle dynamic widget addition and removal, and although we
+have to write the bindings in python we'll only have to do it once.
+
+.. make layout
+
+.. explain reinvented kivy layout
