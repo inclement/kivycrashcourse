@@ -1,0 +1,77 @@
+Hello, this is the 11th kivy crash course video.
+
+This time I'm going to talk about kivy's clock, and the related topic
+of its animation system that makes certain kinds of scheduled events
+much easier.
+
+The general sort of question here is, what if we want to do something
+at some point in the future? That could be a one off, like maybe we
+want a time trial in our game that stops after a few seconds, or it
+could be a regular event like updating the position and speed of your
+character in a game, which you'd want to do at least every frame.
+
+Rather than talking a lot beforehand, I thought I'd just dive in by
+demonstrating two different ways to have some widgets move around,
+which will cover a couple of different ways of thinking about the
+problem. I've already quickly setup an app to demonstrate this as you
+see here, so lets quickly just cover what I did.
+
+.. setup app
+.. draw two rectangles
+.. run app
+
+
+Okay, so for the first problem, let's say I want this first rectangle
+to move sort of physically, moving around and bouncing off the walls
+if it hits them. That means we'll need to frequently check its
+position to see if it's leaving the screen, and to reverse its
+velocity in that direction if so. Let's add a few properties and
+methods to keep track of that:
+
+.. do so
+
+Now we need to actually update the widget's position frequently, so
+that it will actually move...
+
+So that's one basic way to use kivy's clock to schedule things. Of
+course it doesn't have to relate to animating something, you could
+call literally any function this way, and there are many useful
+possibilities.
+
+What you'd find starting from scratch, though, is that a lot of tasks
+need basically the same use of the clock. For instance, moving one
+widget from one place to another would be very common in any kind of
+animated gui, perhaps doing so nonlinearly so it doesn't move at a
+constant speed. Of course we could create this behavior with an
+appropriate clock-scheduled function, but actually kivy has an
+animation system that's designed to deal with exactly
+this. Specifically it lets us animate kivy properties, so if the gui
+depends on them then the gui will update appropriately. It also
+handles stuff like composing multiple simultaneous or sequential
+animations, hiding away the clock backend in a much simpler interface.
+
+I'll demonstrate this with the second rectangle here - lets say I want
+it to move to some other random location whenever a touch moves over
+it. As I said, we could obviously achieve this with the clock, but
+since we just want a specific single movement the animation system is
+perfect and makes it easier.
+
+.. add boilerplate, touch detection, animation
+.. demonstrate
+
+So there we are, two basic ways to use kivy's clock to accomplish
+things over time. The first way, simply scheduling with the clock, is
+very general and you can always depend on it to run some python code
+regularly, or at a specific time. The second way, using animations,
+isn't always useful but makes things a lot easier any time we want to
+animate a property from one value to another. As I mentioned but
+didn't elaborate on, you can also compose them to do efficiently
+perform multiple animations at once, but you can check the docs if you
+want to do that.
+
+That's it for this video. I'm not sure what I'll cover next time,
+possibly kivy's settings interface - it's a bit specific compared to
+these general concepts, but it's a little confusing and it's useful to
+know how to easily and semi-automatically construct a settings panel.
+
+That's for next time though. For now, thank you for watching!
