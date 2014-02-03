@@ -29,12 +29,11 @@ The following are my direct plans for the next few videos and general ideas for 
 
 Next videos:
 
-- Something about layouts
-- Case study 2: Making your own sparse gridlayout?
+- Settings panel (and screen manager?)
+- Something about android
 
 Future topics:
 
-- Animations
 - Using android apis via p4a 
 - Creating a kivy settings panel 
 - Case study: sparse grid layout
@@ -42,12 +41,11 @@ Future topics:
 (requests):
 
 - How to make/use your own events
-- Layouts (examples of different ones) (maybe a case study?)
 - Using a screen manager
 - Using twisted?
 - An android/ios datetime vertical carousel
 - Creating a standalone package via pyinstaller
 - Installation procedure on windows/osx
-- Catering for different screen sizes for consistent ui/sizes on different devices  
+- Catering for different screen sizes for consistent ui/sizes on different devices
 - Video about using maps (combine with android?)
 
