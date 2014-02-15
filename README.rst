@@ -21,6 +21,9 @@ You can find a youtube playlist with all the Kivy Crash Course videos at https:/
 - Video 7: Drawing on the canvas - https://www.youtube.com/watch?v=1d709erhpdQ
 - Video 8: Let's fix some bugs - https://www.youtube.com/watch?v=2Gc8iYJQ_qk
 - Video 9: Creating a scrollable label - https://www.youtube.com/watch?v=WdcUg_rX2fM
+- Video 10: Thinking about layouts - https://www.youtube.com/watch?v=0n8Rar3CgdI
+- Video 11: Animation and the Clock - https://www.youtube.com/watch?v=ChmfVOu9aIc&feature=youtu.be
+- Video 12: Using Android APIs - https://www.youtube.com/watch?v=8Jwp1PTvECI&feature=youtu.be
 
 Plans
 =====
@@ -30,13 +33,10 @@ The following are my direct plans for the next few videos and general ideas for 
 Next videos:
 
 - Settings panel (and screen manager?)
-- Something about android
 
 Future topics:
 
-- Using android apis via p4a 
 - Creating a kivy settings panel 
-- Case study: sparse grid layout
   
 (requests):
 
