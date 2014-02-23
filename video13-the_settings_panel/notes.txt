@@ -1,0 +1,61 @@
+
+
+Hello, this is the 13th Kivy Crash Course video!
+
+
+As I said the last couple of times, I thought this time I'd finally
+get around to talking about how to use kivy's settings panels. That
+is, kivy has a built in ability to create a settings panel with
+whatever config options you like, to automatically save these details
+in a file, and to load them when your app starts. It uses a slightly
+modified version of the standard python configparser, so if you've
+done configuration this way before you'll recognise much of what's
+going on.
+
+The process to make your settings panel isn't very complicated but
+there are a few different steps, and I'm going to walk through adding
+a simple example panel showing most of the functionality you can
+include. I've built this example program to start with, totally
+standard as normal with just a couple of imports and an app, though
+this time we're using a full app class rather than just the
+runtouchapp helper function because we need to use the app to interact
+with the settings panel.
+
+So anyway, to actually create a settings panel....
+
+.. add on_release: app.open_settings
+.. demonstrate
+
+Okay, that's fine and lets us modify some internal kivy settings, but
+now how do we add our own settings panel for our own app?
+
+SO THATS FINE, but then how *do* we add our own settings panel?
+
+To do this, first of all we'll need to tell kivy's configparser what
+settings to store in a config file. We can do that with the
+`build_config` method of App, which is automatically called to set up
+the configparser.
+
+.. add build_config
+
+I've added a simple example of each of the types of setting currently
+supported by kivy - a boolean true or false, a number, an option, a
+string and a path. Of course all the last three are just strings, but
+we'll see shortly how the different kinds options have different
+interfaces for modification in the settings panel.
+
+Now that we've told the configparser what settings items to include,
+we can tell kivy how to construct a panel holding these.
+
+.. add build_settings
+.. show settings json, example of each
+.. show add_json_panel
+.. demonstrate new panel
+.. demonstrate different interactions
+
+The final thing we probably want to do is actually update our app when
+the configuration is changed, as well as reading it in appropriately
+when the app is first started. We can do this with a couple of minor
+changes
+
+.. show how to use self.config.get to access
