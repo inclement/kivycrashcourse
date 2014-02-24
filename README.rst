@@ -24,6 +24,7 @@ You can find a youtube playlist with all the Kivy Crash Course videos at https:/
 - Video 10: Thinking about layouts - https://www.youtube.com/watch?v=0n8Rar3CgdI
 - Video 11: Animation and the Clock - https://www.youtube.com/watch?v=ChmfVOu9aIc&feature=youtu.be
 - Video 12: Using Android APIs - https://www.youtube.com/watch?v=8Jwp1PTvECI&feature=youtu.be
+- Video 13: Using Kivy's settings panel - https://www.youtube.com/watch?v=oQdGWeN51EE
 
 Plans
 =====
@@ -32,12 +33,11 @@ The following are my direct plans for the next few videos and general ideas for 
 
 Next videos:
 
-- Settings panel (and screen manager?)
+- Modules (inspector, others?)
+- Windows installation/packaging?
 
 Future topics:
 
-- Creating a kivy settings panel 
-  
 (requests):
 
 - How to make/use your own events
