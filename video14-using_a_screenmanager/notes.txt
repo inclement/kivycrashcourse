@@ -1,0 +1,72 @@
+
+
+Hello! This is Kivy crash course 14. 
+
+It's been a while since the last video. I was away for a little
+while but hopefully things should get back to normal now.
+
+Before anything else, I want to mention that Kivy has recently
+announced its second programming contest. I'll probably make a short
+video about that directly, so I won't say much now, just that
+registration is open, the contest will actually start on the 15th
+April, and you'll have 4 weeks to make an awesome app following a
+broad theme that will be announced when the contest begins. You can check
+kivy.org/#contest for the full details, do be assured that
+applications will be judged on a range of criteria, so don't be
+afraid to give it a go!
+
+..  
+Anyway, for this video I thought I'd get back into things by
+covering the kivy screenmanager - that's a widget that can contain any
+number of child screen widgets, displaying one at a time and providing
+an api to switch between them with an optional transition effect.
+
+The screenmanager widget isn't actually hard to use, but it's a core
+component of many applications - it's the obvious way to create any
+kind of setup with different screens like separate menu and game
+screens - so I've had a fair number of queries about it. In this video
+I'll just demonstrate the basic way to use it.
+
+To get started, I quickly threw together a program with three
+different kinds of widget, these'll be our screens, which is what you
+can see here - in this case they're simply stacked vertically. What I
+want to do here is to make each of the widgets into its own screen in
+a screenmanager, and show you how to click the buttons to switch to
+new screens.
+
+- goto code
+
+So...here's the code for the program I just showed. I'll go through it
+quickly, but as usual I'll put a link to a downloadable version in the
+video description if you want to download it and follow along.
+
+There's not much new here, I'm not using a screenmanager at all yet,
+but instead each screen is just a BoxLayout with a structure defined
+in kv language. The buttons don't do anything yet, that's part of what
+I'll be doing next. The only maybe new thing is that I'm using a
+previously unmentioned feature of kv language, the ability to create a
+special widget using this syntax at the top. You can see how I haven't
+used triangular brackets, but instead declared the widget tree
+directly without making my own top level class. You can do this once
+per kv language file (or string in this case), and as you can see this
+widget is *returned* by the builder when it parses teh kv language. In
+this program I've simply run that widget as my program.
+
+EXPOSITION
+
+Right, that's enough exposition, lets actually get the screenmanager
+involved.
+- Import screenmanager, screen
+- Change screen BoxLayouts to Screens, and kv language appropriately
+- Add screenmanager and firstscreen, secondscreen
+- add screen names
+- make buttons work
+
+DEMONSTRATE
+
+- add screenmanager function for new random colour screen
+- add random colour screen buttons
+- demonstrate
+
+Conclude!
+- next time: Not sure, suggestions welcome.
