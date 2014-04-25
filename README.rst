@@ -25,6 +25,7 @@ You can find a youtube playlist with all the Kivy Crash Course videos at https:/
 - Video 11: Animation and the Clock - https://www.youtube.com/watch?v=ChmfVOu9aIc&feature=youtu.be
 - Video 12: Using Android APIs - https://www.youtube.com/watch?v=8Jwp1PTvECI&feature=youtu.be
 - Video 13: Using Kivy's settings panel - https://www.youtube.com/watch?v=oQdGWeN51EE
+- Video 14: Using a ScreenManager - https://www.youtube.com/watch?v=xx-NLOg6x8o
 
 Plans
 =====
@@ -41,7 +42,6 @@ Future topics:
 (requests):
 
 - How to make/use your own events
-- Using a screen manager
 - Using twisted?
 - An android/ios datetime vertical carousel
 - Creating a standalone package via pyinstaller
