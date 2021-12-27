@@ -79,4 +79,8 @@ BoxLayout:
             font_size: 30
 ''')
 
-runTouchApp(root_widget)
+class ScreenManagerApp(App):
+    def build(self):
+        return root_widget
+
+ScreenManagerApp().run()
