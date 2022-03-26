@@ -48,4 +48,5 @@ Future topics:
 - Installation procedure on windows/osx
 - Catering for different screen sizes for consistent ui/sizes on different devices
 - Video about using maps (combine with android?)
+- Thank you
 
